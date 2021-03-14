@@ -4,7 +4,7 @@ var arrColorsG = ["#08306b","#08519c","#2171b5", "#4292c6", "#6baed6","#9ecae1",
 
 
 function buildMetadata(sample) {
-  d3.json("data/samples.json").then((data) => {
+  d3.json("samples.json").then((data) => {
     var metadata= data.metadata;
     var resultsarray= metadata.filter(sampleobject => 
       sampleobject.id == sample);
